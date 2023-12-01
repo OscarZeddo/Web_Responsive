@@ -1,0 +1,83 @@
+header {
+    height:20%;
+    margin:0px;
+    padding:0px;
+    background-color:blue;
+}
+
+/*Definimos que todo dentro del header sea elemento inline*/
+header *{
+    display:inline;  
+}
+
+/*Definimos el tamaño de la foto*/
+header img{
+    width:20%;
+    height:100%;
+}
+
+ /*AQUI TERMINAMOS DE EDITAR EL HEADER*/
+
+ /*EMPEZAMOS CON LA EDIDICÓN DEL BODY*/
+
+/*definimos el fondo y margen de toda la pagina */
+body {
+    border: solid 1px;
+    border-color:black;
+    margin:0px;
+    padding:0px;
+    background-color:grey;
+}
+
+
+/*hacemos nuestra lista de navegación responsive, columnas invertidas, y alienadas para que estén arriba*/
+nav {
+    width:20%;
+    display:flex;
+    flex-direction:column-reverse;
+    justify-content:flex-end;
+    background-color:red;
+}
+div h1{
+    font-size: 130px;
+    text-align:center;
+    font-style: italic;
+}
+
+/*le ponemos bordes a nuestros parrafos */
+nav p {
+
+    border:solid 1px;
+    border-color:black;
+    border-right: 100%;
+}
+main {
+    height:90%;
+    display:flex;
+    justify-content:space-between;
+}
+  
+article {
+    display:flex;
+    background-color:lightblue;
+    align-items:center;
+    width: 80%;
+     flex-wrap:wrap; 
+    justify-content: space-around;
+}
+section{
+    display:flex;
+   border:solid 1px;
+    width: 40%; 
+    height: 40%;
+    background-color:greenyellow;
+}
+
+
+
+footer{
+    height:10%;
+    background-color:brown;
+}
+
+/*AQUI TERMINAN LOS ESTILOS DEL BODY*/
