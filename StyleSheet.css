@@ -3,7 +3,7 @@ header {
     height:20%;
     margin:0px;
     padding:0px;
-    background-color:blue;
+    background-color:rgb(100, 100, 100);
 }
 
 /*Definimos que todo dentro del header sea elemento inline*/
@@ -13,10 +13,7 @@ header *{
     margin:0px;
     
 }
-/*Escondemos todos los elementos con la clase mobile*/
-.mobile {
-    display:none;
-}
+
 
 /*Definimos el tamaño de la foto*/
 div img{
@@ -27,15 +24,14 @@ div img{
 /*Definimos el tamaño del titulo, su posición y tipo de letra*/
 div h1{
     text-align:center;
-    font-size: 130px;
+    font-size: 120px;
     font-style: italic;
-    margin-left:10%;
+   
     margin-top:1.5%;
 }
 /*Definimos como se comportan los div*/
-div {
+header div {
     display:flex;
-    background-color:red;
     flex-wrap:nowrap;
     justify-content: flex-start;
     height:100%;
@@ -43,7 +39,20 @@ div {
  /*AQUI TERMINAMOS DE EDITAR EL HEADER*/
 
  /*EMPEZAMOS CON LA EDIDICÓN DEL BODY*/
+/*Escondemos todos los elementos con la clase mobile*/
+.mobile {
+    display:none;
+}
+/*Cambiamos la fuente solo para este titulo, para que nos quepa arriba*/
+#carrera{
+    font-size:100px;
 
+}
+section video {
+    display:inline;
+    height:250px;
+    width:450px;
+}
 /*definimos el fondo y margen de toda la pagina */
 body {
     border: solid 1px;
@@ -58,8 +67,8 @@ nav {
     width:20%;
     display:flex;
     flex-direction:column-reverse;
-    justify-content:flex-end;
-    background-color:red;
+    justify-content:flex-end; 
+    background-color:rgb(100, 100, 100);
 }
 
 /*le ponemos bordes a nuestros parrafos, estos que ocupen todo el contenedor */
@@ -68,6 +77,8 @@ nav p {
     border:solid 1px;
     border-color:black;
     border-right: 100%;
+    background-color:grey;
+   
 }
 /*Especificams el main que sea flexible, ocupe el 100% de la pagina 
 y su contenido este separado a lo largo horizontalmente de la pagina*/
@@ -75,12 +86,12 @@ main {
     display:flex;
     height:100%;
     justify-content:space-between;
+    height:auto;
 }
   /*Especificamos que nuestros articles sean flexibles, ocupando el 80% y 
   su contenido no esté todo en la misma linea, centrado*/
 article {
     display:flex;
-    background-color:lightblue;
     align-items:center;
     width: 80%;
      flex-wrap:wrap; 
@@ -92,12 +103,16 @@ section{
     padding-left:5px;
     padding-right:5px;
     display:flex;
-    border:solid 1px;
     width: 40%; 
-    height: 40%;
-    background-color:greenyellow;
+    height: 20%;
+    background-color:rgb(130, 130, 130);
     flex-direction:column;
     align-items:center;
+}
+/*Con esta ID editaremos solamente la section que contendrá el video.*/
+#video{
+    overflow: auto;
+    width: 60%;
 }
 
 /*Definimos el tamaño de las imagenes dentro de las secciones*/
@@ -110,11 +125,15 @@ section img{
 
 footer{
     height:10%;
-    background-color:brown;
+    background-color:rgb(100, 100, 100);
 }
 
 /*AQUI TERMINAN LOS ESTILOS DEL BODY*/
+/*Aqui terminan los estilos para esta Querie*/
 }
+
+
+
 /*EMPEZAMOS CON LA EDICIÓN DE LA PAGINA SEGÚN LA SIGUIENTE QUERIE*/
 @media screen and (max-width:999px) {
     /*PRIMERO EDITAMOS EL HEADER
@@ -129,6 +148,7 @@ div h1{
     order:-1;
     font-size: 100px;
 }
+/*Definimos el tamaño del icono principal de la pagina*/
 #icon {
     width:50%;
     height:50%;
@@ -142,12 +162,12 @@ div h2 {
 body {
     background-color:rgb(100, 100, 100);
 }
-
+/*Ajustamos el tamaño de las imagenes dentro de section*/
 section img {
     width:70%;
     height:70%;
 }
-
+/*Definimos como se comportaran los elementos dentro de article*/
 main article{
     display:flex;
     flex-wrap:wrap;
@@ -162,7 +182,7 @@ p {
 h1 {
     font-size: 35px;
 }
-
+/*Definimos como se comportaran los elementos dentro de section*/
 article section{
     width:80%;
     background-color:rgb(131, 132, 133);
